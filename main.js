@@ -53,15 +53,17 @@ function randInt(x, y){
 
 colours = [
     "#ff22aa", //system
-    "#ff2222", //red
+    "#dd2e44", //red
     "#c1694f", //fawn
     "#fada5e", //sunny
     "#08d11c", //artie
+    "#40e0d0", //turquoise
     "#0078d7", //blue
     "#967bb6", //lavender
     "#f5a9b8", //pink
     "#920a4e", //mulberry
     "#050505", //styx
+    "#979c9f", //grey
 ]
 shuffleArray(colours);
 
@@ -155,7 +157,7 @@ for (i=0; i<fishCount; i++){
     fishArray.push(new Fish(x, y, dx, dy, width, colour, opacity, fish));
 }
 
-fishArray.push(new Fish(canvas.width/2-200, canvas.height/2-200, dx, dy, maxFishSize+100, "#ff22aa", 1, fish))
+//fishArray.push(new Fish(canvas.width/2-200, canvas.height/2-200, dx, dy, maxFishSize+100, "#ff22aa", 1, fish))
 
 palms = new Image();
 palms.src = "palm.png";
